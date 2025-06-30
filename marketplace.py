@@ -2,6 +2,20 @@ import streamlit as st
 from web3 import Web3
 import json
 
+import streamlit as st
+from web3 import Web3
+import json
+
+# Import configuration
+try:
+    from config import CONTRACT_ADDRESS, ACCOUNT_ADDRESS, PRIVATE_KEY, GANACHE_URL, NETWORK_ID
+except ImportError:
+    st.error("Config file not found. Please run deployment first.")
+    st.stop()
+
+# Connect to blockchain
+w3 = Web3(Web3.HTTPProvider(GANACHE_URL))
+
 st.set_page_config(page_title="Blockchain Marketplace", page_icon="🛒")
 
 # Initialize session state for persistency

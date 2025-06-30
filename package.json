@@ -1,6 +1,16 @@
 {
+  "name": "blockchain-marketplace",
+  "version": "1.0.0",
+  "scripts": {
+    "setup": "node scripts/start-dev.js",
+    "accounts": "node scripts/get-accounts.js",
+    "deploy": "truffle migrate --reset",
+    "start": "streamlit run marketplace.py",
+    "dev": "npm run setup && npm run start"
+  },
   "dependencies": {
     "@openzeppelin/contracts": "^5.3.0",
-    "web3": "^4.16.0"
+    "web3": "^1.10.0"
   }
 }
+
