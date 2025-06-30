@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ethereum Marketplace</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.6.0/web3.min.js"></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <h1>Ethereum Marketplace</h1>
+
+  <!-- Form to create a new product -->
+  <form id="productForm">
+    <input type="text" id="name" placeholder="Product Name" required />
+    <input type="number" id="price" placeholder="Price in Wei" required />
+    <button type="submit">Create Product</button>
+  </form>
+
+  <!-- Display products -->
+  <div id="products"></div>
+</body>
+</html>

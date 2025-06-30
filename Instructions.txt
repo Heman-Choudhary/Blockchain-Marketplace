@@ -1,0 +1,4 @@
+1. ganache
+2. truffle mitigate --reset
+3. Change account address, pvt key and contract number (contract add - obtained from truffle)
+4. python -m streamlit run marketplace.py

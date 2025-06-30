@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+  }
+  input, button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  #products div {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
